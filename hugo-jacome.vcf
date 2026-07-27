@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Jácome;Hugo;;;
+FN:Hugo Jácome
+ORG:EvoWeb
+TITLE:Desarrollador Full Stack .NET
+TEL;TYPE=CELL:+593995306723
+EMAIL;TYPE=INTERNET:hugo.jacome.viera@gmail.com
+URL:https://www.evowebec.com
+NOTE:Desarrollador Full Stack (.NET, Angular, Blazor, Azure) con experiencia en fintech y PCI DSS. Fundador de EvoWeb.
+END:VCARD
