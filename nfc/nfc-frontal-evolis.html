@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+/* MODELO EVOWEB · DISEÑO PLANO PARA EVOLIS: sin degradados ni sombras */
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1012px;height:638px;overflow:hidden;font-family:'Segoe UI',sans-serif}
+.card{width:1012px;height:638px;position:relative;overflow:hidden;background:#ffffff;display:flex}
+/* panel verde plano */
+.panel{width:400px;background:#124B38;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.brand{display:flex;align-items:baseline}
+.brand .ev{font-size:110px;font-weight:800;color:#fff;letter-spacing:2px}
+.inf{width:150px;height:78px;margin-left:6px}
+.webec{font-size:26px;letter-spacing:14px;color:#1DBF84;font-weight:700;margin-top:14px;text-transform:uppercase}
+.slogan{font-size:19px;color:#A8DCC5;margin-top:26px;font-style:italic}
+/* acento */
+.accent{width:14px;background:#1DBF84}
+/* contenido */
+.content{flex:1;padding:70px 56px;display:flex;flex-direction:column;justify-content:center}
+.name{font-size:58px;font-weight:800;color:#1E2A26;letter-spacing:.5px}
+.role{font-size:25px;color:#0E9F6E;font-weight:700;margin-top:12px}
+.rule{width:250px;height:4px;background:#1DBF84;margin:26px 0}
+.dato{font-size:22px;color:#4A5A54;margin-bottom:10px;font-weight:600}
+.dato b{color:#1E2A26}
+/* QR plano negro */
+.qrzone{position:absolute;right:56px;bottom:52px;text-align:center}
+.qrbox{padding:12px;background:#fff;border:5px solid #124B38;border-radius:16px}
+.qrbox .qr{width:180px;height:180px;display:block}
+.qrbox .qr svg{width:100%;height:100%;display:block}
+.qrlbl{font-size:15px;letter-spacing:3px;color:#124B38;font-weight:800;margin-top:10px;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="panel">
+    <div class="brand">
+      <span class="ev">ev</span>
+      <svg class="inf" viewBox="0 0 200 100">
+        <path d="M50 20 C20 20 20 80 50 80 C80 80 120 20 150 20 C180 20 180 80 150 80 C120 80 80 20 50 20 Z" fill="none" stroke="#ffffff" stroke-width="17"/>
+      </svg>
+    </div>
+    <div class="webec">Web · EC</div>
+    <div class="slogan">Un mundo sin límites</div>
+  </div>
+  <div class="accent"></div>
+  <div class="content">
+    <div class="name">Hugo Jácome</div>
+    <div class="role">Desarrollador Full Stack .NET</div>
+    <div class="rule"></div>
+    <div class="dato">📞 <b>096 163 1700</b></div>
+    <div class="dato">🌐 <b>www.evowebec.com</b></div>
+    <div class="dato">📍 Ambato — Ecuador</div>
+  </div>
+  <div class="qrzone">
+    <div class="qrbox"><div class="qr" id="qr"></div></div>
+    <div class="qrlbl">Escanéame</div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+var q=qrcode(0,'H');q.addData('https://hugojacome.evowebec.com');q.make();
+document.getElementById('qr').innerHTML=q.createSvgTag({scalable:true,margin:0});
+</script>
+</body>
+</html>

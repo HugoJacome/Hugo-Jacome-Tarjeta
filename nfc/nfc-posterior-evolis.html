@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+/* POSTERIOR EVOWEB · PLANO PARA EVOLIS */
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1012px;height:638px;overflow:hidden;font-family:'Segoe UI',sans-serif}
+.card{width:1012px;height:638px;position:relative;overflow:hidden;background:#124B38;text-align:center}
+.top{padding-top:44px}
+.brand{display:inline-flex;align-items:baseline}
+.brand .ev{font-size:64px;font-weight:800;color:#fff;letter-spacing:1px}
+.inf{width:88px;height:46px;margin-left:4px}
+.tagline{font-size:15px;letter-spacing:6px;color:#1DBF84;font-weight:700;margin-top:6px;text-transform:uppercase}
+.qrbox{display:inline-block;margin-top:26px;padding:16px;background:#ffffff;border-radius:20px}
+.qrbox .qr{width:250px;height:250px;display:block}
+.qrbox .qr svg{width:100%;height:100%;display:block}
+.cta{font-size:26px;font-weight:800;color:#fff;margin-top:24px;letter-spacing:.5px}
+.cta small{display:block;font-size:17px;font-weight:600;color:#A8DCC5;margin-top:8px;letter-spacing:1.5px}
+.foot{position:absolute;bottom:0;left:0;right:0;height:74px;background:#1DBF84;display:flex;align-items:center;justify-content:center;gap:30px;font-size:20px;color:#0B2E20;font-weight:800;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top">
+    <div class="brand">
+      <span class="ev">ev</span>
+      <svg class="inf" viewBox="0 0 200 100"><path d="M50 20 C20 20 20 80 50 80 C80 80 120 20 150 20 C180 20 180 80 150 80 C120 80 80 20 50 20 Z" fill="none" stroke="#ffffff" stroke-width="17"/></svg>
+    </div>
+    <div class="tagline">Tarjetas Digitales · Sitios Web</div>
+  </div>
+  <div class="qrbox"><div class="qr" id="qr"></div></div>
+  <div class="cta">Acércame a tu teléfono o escanea el código<small>TU TARJETA DIGITAL EN UN TOQUE · SIN APPS</small></div>
+  <div class="foot"><span>hugojacome.evowebec.com</span><span>·</span><span>096 163 1700</span></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+var q=qrcode(0,'H');q.addData('https://hugojacome.evowebec.com');q.make();
+document.getElementById('qr').innerHTML=q.createSvgTag({scalable:true,margin:0});
+</script>
+</body>
+</html>
