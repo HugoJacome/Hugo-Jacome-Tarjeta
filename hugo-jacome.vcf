@@ -1,11 +1,12 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Jácome;Hugo;;;
-FN:Hugo Jácome
+N:EvoWeb;;;;
+FN:EvoWeb · Agencia Digital
 ORG:EvoWeb
-TITLE:Desarrollador Full Stack .NET
-TEL;TYPE=CELL:+593995306723
-EMAIL;TYPE=INTERNET:hugo.jacome.viera@gmail.com
+TITLE:Agencia Digital
+TEL;TYPE=CELL:+593961631700
+EMAIL;TYPE=INTERNET:info@evowebec.com
 URL:https://www.evowebec.com
-NOTE:Desarrollador Full Stack (.NET, Angular, Blazor, Azure) con experiencia en fintech y PCI DSS. Fundador de EvoWeb.
+ADR;TYPE=WORK:;;;Ambato;;;Ecuador
+NOTE:EvoWeb — Un mundo sin límites. Sitios web, tarjetas digitales con NFC y QR, invitaciones de eventos y CV digitales. Contacto: Hugo Jácome, fundador.
 END:VCARD
